@@ -36,6 +36,37 @@ hr{
     border:2px solid rgb(212, 212, 212);
     background-color: #202020;
     border-radius: 4pt;
+    width:100%;
+}
+
+.card-project{
+    border-radius: 4pt;
+    padding:20px;
+    background-color: white;
+}
+
+.card-project-blue{
+    background-color: #197fff;
+}
+
+.card-project-black{
+    background-color: #FF7800;
+}
+
+.card-project-orange{
+    background-color: #753188;
+}
+
+.img-certificate{
+    width:100%;
+}
+
+.img-project{
+    width:100%;
+}
+
+.img-project-mobile{
+    width:100%;
 }
 
 .card-purple{
@@ -81,7 +112,7 @@ a.white:active {
 }
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .bold {
@@ -191,6 +222,10 @@ input[type=file]{
     padding: 120px 0;
 }
 
+.img-mobile{
+    width:100%;
+}
+
 .center {
     text-align: center;
 }
@@ -249,6 +284,10 @@ input[type=file]{
 
 #header .logo img {
     max-height: 40px;
+}
+
+#skills{
+    background: #fff !important;
 }
 
 .img-services {
@@ -1053,7 +1092,7 @@ span{
         font-size: 1.5rem;
     }
     .img-hero {
-        width: 400px;
+        width: 700px;
         /* background-color: white;
         box-shadow: 8px 8px 35px;
         border-radius: 50%; */
@@ -1083,7 +1122,7 @@ span{
         width: auto;
     }
     .img-hero {
-        width: 400px;
+        width: 600px;
         /* background-color: white;
         box-shadow: 8px 8px 35px;
         border-radius: 50%; */
@@ -1116,9 +1155,25 @@ span{
       padding:10px;
       height:55px
     }
+
+    .img-mobile{
+        width:200px;
+    }
+
+    .img-certificate{
+        width:300px;
+    }
+
+    .card-black{
+        width:700px;
+    }
 }
 
 @media (max-width: 575px) {
+
+    .card-black{
+        width:100%;
+    }
     .cart{
         left: 5%;
         width: 90%;
@@ -1141,6 +1196,12 @@ span{
     }
     .img-menu {
         width: 100px;
+    }
+    .img-mobile{
+        width:100px;
+    }
+    .img-certificate{
+        width:100px;
     }
     .menu{
         width:360px;
@@ -1171,7 +1232,7 @@ span{
         height: 100vh;
     }
     .img-hero {
-        width: 300px;
+        width: 500px;
         /* background-color: white;
         box-shadow: 8px 8px 35px;
         border-radius: 50%; */

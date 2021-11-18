@@ -31,35 +31,50 @@ const Navbar=({ auth: { isAuthenticated, loading }, logout })=>{
   let guestLinks=null;
   const pathname = window.location.pathname;
   
-  let aboutLinks=(
+  let skillsLinks=(
     <li className="nav-item mr-3">
-      <a className="nav-link js-scroll-trigger" href="#about">
-        <i className="white fa fa-info"></i>{''}
-        <span className="white hide-sm">&nbsp;&nbsp;About</span>
+      <a className="nav-link js-scroll-trigger" href="#skills">
+        <span className="white hide-sm">&nbsp;&nbsp;Skills</span>
       </a>
     </li>
   );
 
-  let teamLinks=(
+  let educationLinks=(
     <li className="nav-item mr-3">
-      <a className="nav-link js-scroll-trigger" href="#team">
-        <i className="white fas fa-people-arrows"></i>{''}
-        <span className="white hide-sm">&nbsp;&nbsp;Team</span>
+      <a className="nav-link js-scroll-trigger" href="#education">
+        <span className="white hide-sm">&nbsp;&nbsp;Education</span>
       </a>
     </li>
   );
 
-  if(pathname!='/order' && pathname!='/print'){
+  let projectsLinks=(
+    <li className="nav-item mr-3">
+      <a className="nav-link js-scroll-trigger" href="#projects">
+        <span className="white hide-sm">&nbsp;&nbsp;Projects</span>
+      </a>
+    </li>
+  );
+
+  let certificateLinks=(
+    <li className="nav-item mr-3">
+      <a className="nav-link js-scroll-trigger" href="#certificate">
+        <span className="white hide-sm">&nbsp;&nbsp;Certificate</span>
+      </a>
+    </li>
+  );
+
+  if(pathname!='/projects'){
     guestLinks=(
       <ul className="navbar-nav ml-auto">
         <li className="nav-item mr-3">
-          <a className="nav-link js-scroll-trigger" href="">
-            <i className="white fas fa-home"></i>{''}
+          <a className="nav-link js-scroll-trigger" href="#hero">
             <span className="white hide-sm">&nbsp;&nbsp;Home</span>
           </a>
         </li>
-        {pathname=='/' ? aboutLinks : null}
-        {pathname=='/' ? teamLinks : null}
+        {pathname=='/' ? skillsLinks : null}
+        {pathname=='/' ? educationLinks : null}
+        {pathname=='/' ? projectsLinks : null}
+        {pathname=='/' ? certificateLinks : null}
       </ul>
     );
   }

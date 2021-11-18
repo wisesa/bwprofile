@@ -23,7 +23,7 @@ const Landing=({login,isAuthenticated})=>{
             </section>
 
             <div className="bg-shrimp"></div>
-            <section id="about" className="about">
+            <section id="skills" className="about">
                 <div className="container">
                     <div className="section-title">
                         <h2 className="bold">SKILLS</h2>
@@ -66,37 +66,7 @@ const Landing=({login,isAuthenticated})=>{
                 </div>
             </section>
 
-            <section id="services" className="services section-bg sm">
-                <div className="container">
-                    <div className="section-title">
-                        <h2 className="bold">TOP DISHES</h2>
-                    </div>
-
-                    <div className="row content d-flex flex-row-reverse">
-                        <div className="col-lg-6 center-sm left" data-aos="fade-left">
-                            <img className="img-subhero" src="http://localhost:5000/img/hero_bapak.png" />
-                        </div>
-                        <div className="col-lg-6 left-sm d-flex align-items-center card">
-                            <div data-aos="fade-right">
-                                <p className="black">
-                                    <strong>Bachelor Degree Information Technology</strong> - STIKI Malang (2010-2014)
-                                </p>
-                                <p className="black">
-                                    <strong>SMK Telkom Malang</strong> (2007-2010)
-                                </p>
-                                <p className="black">
-                                    <strong>SMP Negeri 8 Malang</strong> (2004-2007)
-                                </p>
-                                <p className="black">
-                                    <strong>SDN Kasin Malang</strong> (1998-2004)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="services" className="services section-bg md">
+            <section id="" className="services section-bg sm">
                 <div className="container">
                     <div className="section-title">
                         <h2 className="bold">EDUCATION</h2>
@@ -107,41 +77,130 @@ const Landing=({login,isAuthenticated})=>{
                             <div data-aos="fade-right">
                                 <div className="card-black p-3">
                                     <p className="white">
-                                        <strong>Bachelor Information Technology</strong> - STIKI Malang (2010-2014)
+                                        <strong>A. Bachelor Information Technology</strong> - STIKI Malang (2010-2014)
                                     </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
                                     <p className="white">
-                                        <strong>SMK Telkom Malang</strong> (2007-2010)
+                                        <strong>B. SMK Telkom Malang</strong> (2007-2010)
                                     </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
                                     <p className="white">
-                                        <strong>SMP Negeri 8 Malang</strong> (2004-2007)
+                                        <strong>C. SMP Negeri 8 Malang</strong> (2004-2007)
                                     </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
                                     <p className="white">
-                                        <strong>SDN Kasin Malang</strong> (1998-2004)
+                                        <strong>D. SDN Kasin Malang</strong> (1998-2004)
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6 center-sm left" data-aos="fade-left">
-                            <img className="img-subhero" src="http://localhost:5000/img/hero_bapak.png" />
+                            <img className="img-subhero" src="http://localhost:5000/img/graduation.png" />
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
 
-            <section id="cta" className="cta">
+            <section id="education" className="services section-bg md">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 text-center">
-                            <h3>Catalog Projects</h3>
-                            <p>My Projects can be viewed here</p>
-                            <a target="_blank" href="http://localhost:1000" className="btn-get-started scrollto">Catalog Projects</a>
-                        </div>
+                    <div className="section-title">
+                        <h2 className="bold">EDUCATION</h2>
                     </div>
 
+                    <div className="row content">
+                        <div className="col-lg-6 left-sm d-flex align-items-center">
+                            <div data-aos="fade-right">
+                                <div className="card-black p-3">
+                                    <p className="white">
+                                        <strong>A. Bachelor Information Technology</strong> - STIKI Malang (2010-2014)
+                                    </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
+                                    <p className="white">
+                                        <strong>B. SMK Telkom Malang</strong> (2007-2010)
+                                    </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
+                                    <p className="white">
+                                        <strong>C. SMP Negeri 8 Malang</strong> (2004-2007)
+                                    </p>
+                                </div>
+                                <div className="card-black p-3 mt-3">
+                                    <p className="white">
+                                        <strong>D. SDN Kasin Malang</strong> (1998-2004)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 center-sm left" data-aos="fade-left">
+                            <img className="img-subhero" src="http://localhost:5000/img/graduation.png" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="team" className="team section-bg">
+            <section id="projects" className="cta">
+                <div className="container">
+                    <div className="section-title">
+                        <h2 className="bold white">PROJECTS</h2>
+                    </div>
+
+                    <div className="row content card-project card-project-blue">
+                        <div className="col-lg-6 center">
+                            <div className="d-flex flex-column align-items-center">
+                            <h2>Workshop</h2>
+                            <p className="left">
+                                Workshop that has sparepart management, service, sparepart sales. On this application we can track our staff whether its a goods entry or outcome transaction.  So its easier for us to track where the staff is real time. We can see income and outcome simultanously.  This app has 3 user (administrator, warehouse admin, cashier)
+                            </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 center">
+                            <img className="img-project" src="http://localhost:5000/img/Batam-Workshop3.png" />
+                        </div>
+                    </div>
+                    <div className="row my-5">
+                    </div>
+                    <div className="row content mt-5 card-project card-project-orange">
+                        <div className="col-lg-6 center">
+                            <img className="img-project" src="http://localhost:5000/img/Archipelagos.png" />
+                        </div>
+                        <div className="col-lg-6 center">
+                            <div className="d-flex flex-column align-items-center">
+                            <h2>Archipelago's for Desktop</h2>
+                            <p className="left">
+                                Archipelago's is a an app for resto.  There are appetizer, main course and dessert to be dishes type.  You can add each dishes on cart, decrease it, and add it more.  After that, you can print lists of dishes in transaction.  You can also create, read, update, delete dishes as user.  But first you have to register first.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row my-5">
+                    </div>
+                    <div className="row content mt-5 card-project card-project-black">
+                        <div className="col-lg-3 center">
+                            <div className="d-flex flex-column align-items-center">
+                            <h2>Archipelago's for Mobile</h2>
+                            <p className="left">
+                                On mobille app you can order the menu from different dishes.  You can add it in cart, decrease it also.  You can choose location of order to be delivered to you.  And also you can see history of your transaction.
+                            </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-sm-4 center">
+                            <img className="img-mobile" src="http://localhost:5000/img/Archipelagos1.png" />
+                        </div>
+                        <div className="col-lg-3 col-sm-4 center">
+                            <img className="img-mobile" src="http://localhost:5000/img/Archipelagos2.png" />
+                        </div>
+                        <div className="col-lg-3 col-sm-4 center">
+                            <img className="img-mobile" src="http://localhost:5000/img/Archipelagos3.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificate" className="team section-bg">
                 <div className="container">
 
                     <div className="section-title">
@@ -150,27 +209,27 @@ const Landing=({login,isAuthenticated})=>{
 
                     <div className="row">
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-3">
                             <div className="member d-flex flex-column align-items-center" data-aos="fade-up">
-                                <div className="card"><img src="http://localhost:5000/img/INAICTA.jpg" className="img-fluid" alt="" /></div>
+                                <div className="card"><img src="http://localhost:5000/img/INAICTA.jpg" className="img-certificate" alt="" /></div>
                                 <div className="member-info mt-4 center">
                                     <h4>INAICTA 2012</h4>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-3">
                             <div className="member d-flex flex-column align-items-center" data-aos="fade-up">
-                                <div className="card"><img src="http://localhost:5000/img/PKM.jpg" className="img-fluid" alt="" /></div>
+                                <div className="card"><img src="http://localhost:5000/img/PKM.jpg" className="img-certificate" alt="" /></div>
                                 <div className="member-info mt-4 center">
                                     <h4>PKM</h4>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-3">
                             <div className="member d-flex flex-column align-items-center" data-aos="fade-up">
-                                <div className="card"><img src="http://localhost:5000/img/PKM GT.jpg" className="img-fluid" alt="" /></div>
+                                <div className="card"><img src="http://localhost:5000/img/PKM GT.jpg" className="img-certificate" alt="" /></div>
                                 <div className="member-info mt-4 center">
                                     <h4>PKM GT</h4>
                                 </div>

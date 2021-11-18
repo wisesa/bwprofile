@@ -50,16 +50,16 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 }));
 
 //app.get('/', (req, res) => res.send('API Running'));
-app.get('/', require('./routes/front/front'));
+//app.get('/', require('./routes/front/front'));
 
 // Static folder
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Define Routes
-// app.use('/api/auth', require('./routes/api/auth'));
-// app.use('/api/menu', require('./routes/api/menu'));
-// app.use('/api/transaction', require('./routes/api/transaction'));
-// app.use('/api/users', require('./routes/api/users'));
+app.use('/api/auth', require('./routes/api/auth'));
+app.use('/api/menu', require('./routes/api/menu'));
+app.use('/api/transaction', require('./routes/api/transaction'));
+app.use('/api/users', require('./routes/api/users'));
 
 //Serve static asset in production
 if(process.env.NODE_ENV === 'production'){
